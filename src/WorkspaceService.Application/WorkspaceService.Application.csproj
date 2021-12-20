@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Douanier\src\Douanier\Douanier.csproj" />
+    <ProjectReference Include="..\..\..\ScalaWay\src\ScalaWay.Utils\ScalaWay.Utils.csproj" />
+    <ProjectReference Include="..\WorkspaceService.Application.Contracts\WorkspaceService.Application.Contracts.csproj" />
+    <ProjectReference Include="..\WorkspaceService.Domain.Models\WorkspaceService.Domain.Models.csproj" />
+    <ProjectReference Include="..\WorkspaceService.EntityFrameworkCore\WorkspaceService.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Compartments\Commands\" />
+    <Folder Include="Compartments\Queries\" />
+    <Folder Include="Projects\Commands\" />
+    <Folder Include="Projects\Queries\" />
+  </ItemGroup>
+
+</Project>
